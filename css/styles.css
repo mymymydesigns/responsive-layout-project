@@ -262,6 +262,11 @@ hr {
         display: inline;
         text-align: right;
         padding: 1.25em;
+    
+    }
+
+    .footer-nav a {
+        text-decoration: none;
     }
 
     .footer-anchor {
