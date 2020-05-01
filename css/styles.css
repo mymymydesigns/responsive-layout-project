@@ -1,0 +1,315 @@
+
+/* web font */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900i&display=swap');
+
+/* CSS document */
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* base styles */
+
+h1,
+h2,
+h3,
+h4,
+body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+
+}
+body {
+    background-color: #F4F4F4;
+    width: 100%;
+}
+
+h1 {
+    font-size: 5.625rem; /* 90px/16px  */
+    font-weight: 400;
+    color: #626262;
+}
+
+h2 {
+    font-size: 3.3125em; /* 53px/16px  */
+    font-weight: 300;
+    color: rgb(56, 56, 56);
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-size: 1.5em; /* 20px/16px  */
+    font-weight: 400;
+    color: rgb(44, 44, 44); 
+}
+
+h4 {
+    font-size: 1.25em; /* 24px/16px  */
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(56, 56, 56); 
+}
+
+p {
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.75;
+    color: black; 
+}
+
+hr {
+    margin: 0 20px;
+    color: rgb(211, 211, 211);
+    border-style: solid;
+}
+
+
+/* classes */
+.student-name {
+    font-size: 2em;
+    padding-top: 2em;
+}
+
+.wrapper {
+    text-align: center;
+    background-color: white;
+    padding: 1em;
+}
+
+.student-info {
+    text-align: center;
+    padding: 2em;
+}
+
+.student-info img {
+	margin: auto;
+}
+
+.student-info p {
+	margin: auto;
+}
+
+.titles {
+    padding: 0;
+}
+
+.portfolio-blocks {
+    padding: 10px 10px;
+
+}
+
+/* container styles */
+
+.portfolio-item {
+    display: inline-block;
+}
+
+.portfolio-item img{
+    width: 100%;
+	margin: auto;
+}
+
+.container {
+    margin: auto;
+	
+}
+
+.main-nav {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-nav ul {
+	padding: 10px;
+}
+
+.main-nav li {
+    list-style: none;
+    font-size: 1.25em; /* 24px/16px  */
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+	background: #fff;
+    margin: 10px 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    display: block;
+    padding: 20px 20px;
+}
+
+.main-nav a:hover{
+    color:rgb(255, 255, 255);
+    background-color: rgb(31, 97, 241);
+    box-shadow: 1px 1px 10px rgb(224, 224, 224);
+}
+
+.main-header {
+	text-align: center;
+	display: block;
+}
+
+.main-footer {
+    text-align: center;
+	padding: 1em;
+
+}
+
+
+.main-footer li {
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.footer-name {
+    float: left;
+}
+
+.footer-anchor {
+    float: right;
+}
+
+.footer-anchor a {
+    text-decoration: none;
+}
+
+.contact {
+    text-align: center;
+    padding: 20px;
+    background-color: #F4F4F4;
+}
+
+
+.footer-nav {
+    display: none;
+    font-size: 1.25em; /* 24px/16px  */
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(56, 56, 56); 
+}
+
+/* media queries */
+
+
+@media (min-width: 768px) {
+
+    .main-nav a:hover{
+        color:rgb(31, 97, 241);
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px 1px 10px rgb(224, 224, 224);
+    }
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        background: none;
+    }
+    
+    .col {
+        float: left;
+    }
+
+    .student-info {
+        display: inline-block;
+        text-align: left;
+    }
+
+    .student-info img {
+        float: right;
+        width: 50%;
+        padding: 10px;
+    }
+    
+    .student-info p {
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .portfolio-blocks {
+        width: 100%;
+    }
+    .portfolio-item,
+    .col {
+        float: inline;
+        width: 50%;
+        padding: 1em;
+    }
+    .contact {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+
+
+    .footer-nav,
+    .footer-nav li {
+        display: inline;
+        text-align: right;
+        padding: 1.25em;
+    }
+
+    .footer-anchor {
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+
+    .main-header {
+        display: inline;
+    }
+
+    .student-name {
+        float: left;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .main-nav {
+        float: right;
+        text-align: right;
+    }
+
+    .main-nav a:hover{
+        color:rgb(31, 97, 241);
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px 1px 10px rgb(224, 224, 224);
+    }
+
+    .portfolio-blocks {
+        width: 100%;
+    }
+
+    .portfolio-item,
+    .col {
+        float: inline;
+        width: 33%;
+        padding: 1em;
+    }
+
+    .contact {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+
+}
