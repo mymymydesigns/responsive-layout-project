@@ -87,7 +87,8 @@ ul {
 }
 
 .student-info img {
-	margin: auto;
+    margin: auto;
+    max-width: 100%;
 }
 
 .student-info p {
@@ -111,7 +112,8 @@ ul {
 
 .portfolio-item img{
     width: 100%;
-	margin: auto;
+    margin: auto;
+    max-width: 100%;
 }
 
 .container {
@@ -233,6 +235,7 @@ ul {
         float: right;
         width: 50%;
         padding: 10px;
+        max-width: 100%;
     }
     
     .student-info p {
